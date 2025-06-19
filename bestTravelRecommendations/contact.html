@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BestTravelRecommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">
+        <img src="logo.png" alt="Best Travel Recommendations Logo">
+        <span>Best Travel Recommendations</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="travel_recommendations.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <form id="searchForm" class="search-form" style="visibility: hidden;">
+        <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
+        <button type="submit">Search</button>
+        <button type="button" id="resetBtn">Reset</button>
+    </form>
+</nav>
+<div class="main-content">
+    <div class="heading-90">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="text-content-90-wide">
+        <p>Get in touch with us! We would love to hear from you. Whether you have questions, feedback, or just want to share your travel experiences, feel free to reach out.</p>
+    </div>
+    <div class="contact-form">
+        <form action="submit_contact_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+</div>
+</body>
+</html>
