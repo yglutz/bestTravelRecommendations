@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let recommendations = null;
 
-    fetch('http://127.0.0.1:8080/travel_recommendations_api.json')
+    fetch('travel_recommendations_api.json')
       .then(response => response.json())
       .then(data => {
           recommendations = data
@@ -87,8 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     item: beach
                 });
             }
-
-
         });
 
         displayResults(results);
