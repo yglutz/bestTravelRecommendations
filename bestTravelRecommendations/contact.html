@@ -23,21 +23,23 @@
     </form>
 </nav>
 <div class="main-content">
-    <div class="heading-90">
-        <h1>Contact Us</h1>
-    </div>
-    <div class="text-content-90-wide">
-        <p>Get in touch with us! We would love to hear from you. Whether you have questions, feedback, or just want to share your travel experiences, feel free to reach out.</p>
+    <div class="content-wrapper">
+        <div class="heading-90">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="text-content-90">
+            <p>Get in touch with us! We would love to hear from you. Whether you have questions, feedback, or just want to share your travel experiences, feel free to reach out.</p>
+        </div>
     </div>
     <div class="contact-form">
-        <form action="submit_contact_form.php" method="post">
-            <label for="name">Name:</label>
+        <form method="post">
+            <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
+            <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label>
+            <label for="message">Message</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
             <button type="submit">Send Message</button>
